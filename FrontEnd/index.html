@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"></script>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div id="basic-indicators">
+            <h3>Temperature monitor</h3>
+            <h5>Current:</h5>
+            <p>
+                Celcius: <span id="celciusIndicator"></span> C <br>
+                Fahrenheit: <span id="fahrenheitIndicator"></span> F <br>
+                Humidity: <span id="humidityIndicator"></span>% <br>
+            </p>
+        </div>
+        <div id="recent-history">
+            <h5>Recent History:</h5>
+            <div class="row">
+                <div class="col s12 xl6">
+                    <canvas id="temperatureChart"></canvas>
+                </div>
+                <div class="col s12 xl6">
+                    <canvas id="humidityChart"></canvas>
+                </div>
+            </div>                
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="chart.js"></script>
+</html>
